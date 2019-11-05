@@ -1,0 +1,11 @@
+name: Invite
+
+on: 
+  pull_request:
+    branches: [master]
+    types: [closed]
+jobs:
+  invite:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: lekterable/inclusive-organization-action@v0.0.1
