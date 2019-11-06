@@ -12,4 +12,5 @@ jobs:
         uses: lekterable/inclusive-organization-action@master
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-          organization: ${{ secrets.organization }}
+          organization: string
+          SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
