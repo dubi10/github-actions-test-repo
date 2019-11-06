@@ -11,5 +11,5 @@ jobs:
       - name: Hello world action
         uses: lekterable/inclusive-organization-action@master
         env:
-          SECRET_TOKEN: ${{ secrets.organization }}
-          organization: ${{ secrets.SECRET_TOKEN }}
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          organization: ${{ secrets.organization }}
