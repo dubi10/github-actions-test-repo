@@ -11,5 +11,5 @@ jobs:
       - name: Hello world action
         uses: lekterable/inclusive-organization-action@master
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
           organization: just-a-test-repo
