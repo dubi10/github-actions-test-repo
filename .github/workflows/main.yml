@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: lekterable/inclusive-organization-action@master
-        with:
+        env:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           organization: just-a-test-repo
