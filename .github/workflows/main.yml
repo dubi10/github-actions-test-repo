@@ -8,7 +8,8 @@ jobs:
   invite:
     runs-on: ubuntu-latest
     steps:
-      - uses: lekterable/inclusive-organization-action@master
+      - name: Hello world action
+        uses: lekterable/inclusive-organization-action@master
         env:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           organization: just-a-test-repo
