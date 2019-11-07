@@ -1,15 +1,14 @@
-name: Invite
-
+name: Inclusive Organization
 on: 
   push:
-    branches: [master]
+    branches: master
 jobs:
   invite:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world action
+      - name: Invite contributor to the organization
         uses: lekterable/inclusive-organization-action@master
+        with:
+          organization: just-a-test-repo
         env:
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-          organization: string
-          SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
