@@ -1,13 +1,11 @@
-name: Invite
-
+name: Invite contributor to the organization
 on: 
   push:
-    branches: [master]
+    branches: master
 jobs:
   invite:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world action
-        uses: lekterable/inclusive-organization-action@master
+      - uses: lekterable/inclusive-organization-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
