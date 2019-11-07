@@ -1,9 +1,8 @@
 name: Invite
 
 on: 
-  pull_request:
+  push:
     branches: [master]
-    types: [closed]
 jobs:
   invite:
     runs-on: ubuntu-latest
