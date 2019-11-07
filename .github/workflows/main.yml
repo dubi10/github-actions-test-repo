@@ -10,3 +10,5 @@ jobs:
         uses: lekterable/inclusive-organization-action@master
         with:
           organization: just-a-test-repo
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
