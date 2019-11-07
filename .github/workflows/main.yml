@@ -1,14 +1,15 @@
 name: Invite
 
 on: 
-  pull_request:
+  push:
     branches: [master]
-    types: [closed]
 jobs:
   invite:
     runs-on: ubuntu-latest
     steps:
-      - uses: lekterable/inclusive-organization-action@master
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          organization: just-a-test-repo
+      - name: Hello world action
+        uses: lekterable/inclusive-organization-action@master
+        env:
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          organization: string
+          SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
