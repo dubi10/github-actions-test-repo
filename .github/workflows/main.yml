@@ -10,6 +10,7 @@ jobs:
         uses: lekterable/inclusive-organization-action@master
         with:
           organization: inclusive-organization
+          team: Coool team
           comment: >
             Thank you so much for helping us improve styled-components! Based on our [Community Guidelines](https://github.com/styled-components/styled-components/blob/master/CONTRIBUTING.md) every person that has a PR of any kind merged is offered **an invitation to the styled-components organization**—that is you right now!
             
