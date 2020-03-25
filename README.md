@@ -2,6 +2,4 @@
 
 Testing actions againss
 testing
-testngssd
-aa
-aa
+testng
