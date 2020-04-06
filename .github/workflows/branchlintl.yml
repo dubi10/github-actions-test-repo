@@ -1,0 +1,11 @@
+name: Git Checks
+on: [push]
+jobs:
+  block-fixup:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Lint branch name
+        uses: lekterable/branchlint-action@master
+        uses: 13rac1/block-fixup-merge-action@v1.1.1
+        with: 
+          allow: ['development', '(fix|feat|chore)\\/DEV-\\d{4}']
