@@ -1,10 +1,12 @@
 name: Branchlint
 on: [push]
 jobs:
-  block-fixup:
-    runs-on: ubuntu-18.04
+  lint:
+    runs-on: ubuntu-latest
     steps:
       - name: Lint branch name
         uses: lekterable/branchlint-action@master
         with: 
-          allow: ["development", "(fix|feat|chore)\\/DEV-\\d{4}"]
+          allow: |
+            development
+            (fix|feat|chore)\\/DEV-\\d{4}
