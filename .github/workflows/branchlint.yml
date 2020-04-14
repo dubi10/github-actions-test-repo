@@ -10,3 +10,4 @@ jobs:
           allow: |
             development
             /(fix|feat|chore)/DEV-\d{4}/
+            master
