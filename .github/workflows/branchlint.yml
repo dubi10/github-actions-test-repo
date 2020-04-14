@@ -9,4 +9,4 @@ jobs:
         with: 
           allow: |
             development
-            (fix|feat|chore)\\/DEV-\\d{4}
+            /(fix|feat|chore)/DEV-\d{4}/
