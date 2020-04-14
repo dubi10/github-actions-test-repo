@@ -7,6 +7,6 @@ jobs:
       - name: Lint branch name
         uses: lekterable/branchlint-action@master
         with: 
-          allow: |
+          allowed: |
             development
             /(fix|feat|chore)/DEV-\d{4}/
